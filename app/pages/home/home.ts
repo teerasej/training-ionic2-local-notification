@@ -12,6 +12,9 @@ export class HomePage {
   }
 
   showAlert() {
-    
+    LocalNotifications.schedule({
+      id: 1,
+      text: "Single Notification"
+    });
   }
 }
