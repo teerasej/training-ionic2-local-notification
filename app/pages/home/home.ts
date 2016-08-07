@@ -8,11 +8,7 @@ import {LocalNotifications} from 'ionic-native';
 })
 export class HomePage {
   constructor(public navCtrl: NavController) {
-
-    LocalNotifications.on('click', (notification, state) => {
-      alert(notification.id + " was clicked");
-    })
-
+    
   }
 
   showAlert() {
