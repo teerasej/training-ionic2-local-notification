@@ -14,7 +14,10 @@ export class HomePage {
   showAlert() {
     LocalNotifications.schedule({
       id: 1,
-      text: "Single Notification"
+      text: "Single Notification",
+      // Badge number for iOS
+      // Notification number for Android
+      badge: 3
     });
   }
 }
