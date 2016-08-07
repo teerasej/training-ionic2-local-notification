@@ -13,21 +13,30 @@ export class HomePage {
 
   showAlert() {
 
+    // Schudule notification in next 2 minutes
+    let currentDate = new Date();
+    let scheduledTime = currentDate.toLocaleTimeString()
+    console.log(currentDate.toLocaleTimeString());
+    let targetDate = new Date(currentDate.setMinutes(currentDate.getMinutes() + 2));
+    console.log(targetDate.toLocaleTimeString());
+
+
+    // Set sound's file path
     let soundFilePath = 'file://';
 
-    if(Device.device.platform == 'Android'){
+    if (Device.device.platform == 'Android') {
       soundFilePath += 'sound.mp3';
     } else {
       soundFilePath += 'sound.caf';
     }
 
+    // Schedule notification
     LocalNotifications.schedule({
       id: 1,
-      text: "Single Notification",
-      // Badge number for iOS
-      // Notification number for Android
-      badge: 3,
+      title: "2 Minute Notification",
+      text: "Scheduled " + scheduledTime,
+      at: targetDate,
       sound: soundFilePath
-    });
+    })
   }
 }
