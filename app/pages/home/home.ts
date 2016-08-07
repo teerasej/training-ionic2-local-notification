@@ -12,9 +12,13 @@ export class HomePage {
   }
 
   showAlert() {
+    let currentDate = new Date();
+    let targetDate = new Date(currentDate.getMinutes() + 1);
+
     LocalNotifications.schedule({
       id: 1,
-      text: "Single Notification"
+      text: "1 Minute Notification",
+      at: targetDate
     });
   }
 }
