@@ -18,9 +18,13 @@ export class MyApp {
       StatusBar.styleDefault();
 
       LocalNotifications.on('click', (notification, state) => {
-        alert('ok')
-        alert(notification.id + " was clicked");
+
+        // console.dir(notification);
+        let data = JSON.parse(notification.data);
+        // console.dir(data);
+        alert('Hello, ' + data.name + ', productId:  ' + data.productId);
       })
+
     });
   }
 }
