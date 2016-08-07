@@ -8,13 +8,14 @@ import {LocalNotifications} from 'ionic-native';
 })
 export class HomePage {
   constructor(public navCtrl: NavController) {
-    
+
   }
 
   showAlert() {
     LocalNotifications.schedule({
       id: 1,
-      text: "Single Notification"
+      text: "Single Notification",
+      data: { name: "Teerasej", productId: "1234" }
     })
   }
 }
