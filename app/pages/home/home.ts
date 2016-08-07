@@ -13,11 +13,15 @@ export class HomePage {
 
   showAlert() {
     let currentDate = new Date();
-    let targetDate = new Date(currentDate.getMinutes() + 1);
+    let scheduledTime = currentDate.toLocaleTimeString()
+    console.log(currentDate.toLocaleTimeString());
+    let targetDate = new Date(currentDate.setMinutes(currentDate.getMinutes() + 2));
+    console.log(targetDate.toLocaleTimeString());
 
     LocalNotifications.schedule({
       id: 1,
-      text: "1 Minute Notification",
+      title: "2 Minute Notification",
+      text: "Scheduled " + scheduledTime,
       at: targetDate
     });
   }
