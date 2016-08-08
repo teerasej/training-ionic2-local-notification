@@ -24,10 +24,10 @@ export class HomePage {
     LocalNotifications.schedule({
       id: 1,
       text: "Single Notification",
+      sound: soundFilePath,
       // Badge number for iOS
       // Notification number for Android
       badge: 3,
-      sound: soundFilePath
     });
   }
 }
