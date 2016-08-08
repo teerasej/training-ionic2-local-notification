@@ -15,7 +15,7 @@ export class HomePage {
     LocalNotifications.schedule({
       id: 1,
       text: "Single Notification",
-      data: { name: "Teerasej", productId: "1234" }
+      // data: { name: "Teerasej", productId: "1234" }
     })
   }
 }

@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
-import {LocalNotifications} from 'ionic-native';
+// import {LocalNotifications} from 'ionic-native';
 
 
 @Component({
@@ -17,13 +17,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
 
-      LocalNotifications.on('click', (notification, state) => {
+      // on('click', (notification, state) => {})
+      // Get data with JSON.parse(notification.data);
 
-        // console.dir(notification);
-        let data = JSON.parse(notification.data);
-        // console.dir(data);
-        alert('Hello, ' + data.name + ', productId:  ' + data.productId);
-      })
 
     });
   }
