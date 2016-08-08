@@ -11,7 +11,7 @@ export class HomePage {
 
   }
 
-  showAlert() {
+  scheduleNotification() {
 
     let soundFilePath = 'file://';
 
