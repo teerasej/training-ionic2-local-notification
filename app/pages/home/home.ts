@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, Alert} from 'ionic-angular';
-import {LocalNotifications} from 'ionic-native';
+// import {LocalNotifications} from 'ionic-native';
 
 
 @Component({
@@ -12,10 +12,7 @@ export class HomePage {
   }
 
   scheduleNotification() {
-    LocalNotifications.schedule({
-      id: 1,
-      title: "Oh, yeah!",
-      text: "นี่คือตัวแจ้งเตือนแรกของเรา"
-    });
+    // .schudule( {id:int, title, text})
+    
   }
 }
