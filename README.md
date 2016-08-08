@@ -9,18 +9,11 @@
 
 * [Ionic Native: Local Notification](http://ionicframework.com/docs/v2/native/local-notifications/)
 
-## Install Ionic native
+## Install Ionic Native and dependency package 
 
-Execute following command in Command prompt or Terminal:
+Execute following command in Command prompt or Terminal
 
 ```
 npm install ionic-native --save
-```
-
-## Install Local Notifcation plugin 
-
-Execute following command in Command Prompt or Terminal:
-
-```
 ionic plugin add de.appplant.cordova.plugin.local-notification
 ```
