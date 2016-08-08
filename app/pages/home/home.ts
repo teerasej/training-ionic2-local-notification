@@ -11,7 +11,7 @@ export class HomePage {
 
   }
 
-  showAlert() {
+  scheduleNotification() {
     let currentDate = new Date();
     let scheduledTime = currentDate.toLocaleTimeString()
     console.log(currentDate.toLocaleTimeString());
