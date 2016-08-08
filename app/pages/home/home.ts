@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {NavController, Alert} from 'ionic-angular';
 import {LocalNotifications} from 'ionic-native';
-import { Device } from 'ionic-native';
+// import { Device } from 'ionic-native';
 
 @Component({
   templateUrl: 'build/pages/home/home.html'
@@ -22,13 +22,13 @@ export class HomePage {
 
 
     // Set sound's file path
-    let soundFilePath = 'file://';
+    // let soundFilePath = 'file://';
 
-    if (Device.device.platform == 'Android') {
-      soundFilePath += 'sound.mp3';
-    } else {
-      soundFilePath += 'sound.caf';
-    }
+    // if (Device.device.platform == 'Android') {
+    //   soundFilePath += 'sound.mp3';
+    // } else {
+    //   soundFilePath += 'sound.caf';
+    // }
 
     // Schedule notification
     LocalNotifications.schedule({
@@ -36,7 +36,7 @@ export class HomePage {
       title: "2 Minute Notification",
       text: "Scheduled " + scheduledTime,
       at: targetDate,
-      sound: soundFilePath
+      // sound: soundFilePath
     })
   }
 }
