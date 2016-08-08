@@ -27,7 +27,7 @@ export class HomePage {
       sound: soundFilePath,
       // Badge number for iOS
       // Notification number for Android
-      badge: 3,
+      // badge: 3,
     });
   }
 }
