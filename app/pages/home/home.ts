@@ -11,7 +11,7 @@ export class HomePage {
 
   }
 
-  showAlert() {
+  scheduleNotification() {
 
     // Schudule notification in next 2 minutes
     let currentDate = new Date();
