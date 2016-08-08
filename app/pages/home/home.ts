@@ -13,8 +13,9 @@ export class HomePage {
 
   scheduleNotification() {
     let currentDate = new Date();
-    let scheduledTime = currentDate.toLocaleTimeString()
-    let targetDate = new Date(currentDate.setMinutes(currentDate.getMinutes() + 2));
+    let scheduledTime = currentDate.toLocaleTimeString();
+    let next2Minutes = currentDate.setMinutes(currentDate.getMinutes() + 2);
+    let targetDate = new Date(next2Minutes);
     console.log(scheduledTime);
     console.log(targetDate.toLocaleTimeString());
 
