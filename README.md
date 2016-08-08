@@ -13,14 +13,20 @@
 
 Execute following command in Command prompt or Terminal
 
-### Ionic Native
+### 1. Ionic Native
 
 ```
 npm install ionic-native --save
 ```
 
-### Local Notification
+### 2. Local Notification
 
 ```
 ionic plugin add de.appplant.cordova.plugin.local-notification
+```
+
+## If you clone the repo
+
+``` 
+ionic state restore
 ```
