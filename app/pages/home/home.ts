@@ -12,28 +12,19 @@ export class HomePage {
   }
 
   scheduleNotification() {
-    // Get current date
-    
 
-    // Keep locale time string in variable
-    
-
-    // Get current minute plus with 2, and set to currentDate
-   
-
-    // Create new date object with 'plus 2 minutes' data
-    
-    
-    // Log value
-    // console.log(scheduledTime);
-    // console.log(targetDate.toLocaleTimeString());
+    let currentDate = new Date();
+    let scheduledTime = currentDate.toLocaleTimeString()
+    let targetDate = new Date(currentDate.setMinutes(currentDate.getMinutes() + 2));
+    console.log(scheduledTime);
+    console.log(targetDate.toLocaleTimeString());
 
     LocalNotifications.schedule({
       id: 1,
       title: "2 Minute Notification",
       // Show time that notification has been scheduled.
-      text: "Scheduled ",
-      // at: 
+      text: "Scheduled " + scheduledTime,
+      at: targetDate 
     });
   }
 }
