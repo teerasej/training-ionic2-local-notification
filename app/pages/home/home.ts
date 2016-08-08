@@ -14,7 +14,8 @@ export class HomePage {
   showAlert() {
     LocalNotifications.schedule({
       id: 1,
-      text: "Single Notification"
+      title: "Oh, yeah!",
+      text: "นี่คือตัวแจ้งเตือนแรกของเรา"
     });
   }
 }
