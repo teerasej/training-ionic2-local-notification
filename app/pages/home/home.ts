@@ -11,7 +11,7 @@ export class HomePage {
 
   }
 
-  showAlert() {
+  scheduleNotification() {
     LocalNotifications.schedule({
       id: 1,
       text: "Single Notification",
