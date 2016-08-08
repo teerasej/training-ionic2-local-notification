@@ -1,5 +1,10 @@
 # Local Notification in Ionic 2
 
+## Download and Install
+
+1. [GitHub Desktop](https://desktop.github.com)
+2. [Visual Studio Code](https://code.visualstudio.com/)
+
 ## Reference 
 
 * [Ionic Native: Local Notification](http://ionicframework.com/docs/v2/native/local-notifications/)
